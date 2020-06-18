@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Table - Express</title>
+	<!-- Latest compiled and minified CSS & JS -->
+	<link href="https://maxcdn.bootstrapcdn.com/bootswatch/4.0.0/flatly/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/styles.css" media="screen" title="no title">
+	<script src="https://code.jquery.com/jquery.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+	<div class="container hidden">
+		<div class="row top-30">
+      <div class="col-md-2 col-sm-2">
+        <a class="btn btn-default" href="/blog">View Tables</a>
+      </div>
+      <div class="col-md-2 col-sm-2">
+        <a class="btn btn-default" href="/authors">Manage Employee</a>
+      </div>
+    </div>
+		<div class="row">
+			<div class="col-md-6 col-md-offset-3">
+				<form id="cms">
+					<div class="form-group">
+						<label for="title">Table Number:</label>
+						<input placeholder="Post Title" type="text" class="form-control" id="title">
+						<br />
+						<label for="body">Food Order:</label>
+						<textarea placeholder="enter food" class="form-control" rows="5" id="body"></textarea>
+						
+						</div>
+
+						<label for="body">Drink Order:</label>
+						<textarea placeholder="enter drink" class="form-control" rows="5" id="body"></textarea>
+						<div class="form-group">
+							<label for="category">Select Employee:</label>
+							<select class="form-control" id="author">
+  						</select>
+						</div>
+
+						<br />
+						<button type="submit" class="btn btn-success submit">Submit</button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+	<!-- Custom Script -->
+	<script src="js/cms.js" type="text/javascript"></script>
+
+</body>
+
+</html>

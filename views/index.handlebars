@@ -1,0 +1,90 @@
+<div id="home">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <h1>Welcome!</h1>
+        {{#if user}}
+        <h2>This is your Home Page!</h2>
+        <a href="/logout" class="btn btn-success">Log Out</a>
+        <a href="/users" class="btn btn-success">My Info</a>
+        <a href="/authors" class="btn btn-success">Create Employee</a>
+        <a href="/blog" class="btn btn-success">Table List</a>
+        <a href="/cms" class="btn btn-success">Create a Table</a>
+        {{else}}
+        <p>Please <a href="/login">log in</a>.</p>
+        {{/if}}
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+<!-- <h1>Restaurant</h1>
+
+<div class="row">
+  <div class="col-6">
+    <h2>Open Table area...</h2>
+
+    <ul>
+      {{#each burger}}
+      {{#unless devoured}}
+      <li>
+        <h3>Table Number {{table_number}}</h3>
+        <h4>Food</h4>
+        <button class="eat" data-id="{{id}}">Add</button>
+        <button class="eat" data-id="{{id}}">Delete</button>
+        <h4>Drinks</h4>
+        <button class="eat" data-id="{{id}}">Add</button>
+        <button class="eat" data-id="{{id}}">Delete</button>
+        <h4>Checkout</h4>
+        <button class="eat" data-id="{{id}}">Checkout</button>
+      
+      <form class="create-form">
+
+  <div class="form-group">
+    <label for="ca">Table Number:</label>
+    <input type="text" id="burger" name="name">
+  </div>
+  <button id="add">Add</button>
+</form>
+      {{/unless}}
+      {{/each}}
+    </ul>
+    </li>
+  </div>
+
+
+  <div class="col-6">
+    <h2>Closed Table Area...</h2>
+    <ul>
+      {{#each burger}}
+      {{#if devoured}}
+      <li>
+        {{burger_name}}
+        <h3>Closed</h2>
+        <ul>
+          {{#each burger}}
+          {{#if devoured}}
+          <li>
+            {{burger_name}}
+          </li>
+          {{/if}}
+          {{/each}}
+        </ul>
+      </li>
+      {{/if}}
+      {{/each}}
+    </ul>
+  </div>
+</div>
+
+<form class="create-form">
+
+  <div class="form-group">
+    <label for="ca">Table Number:</label>
+    <input type="text" id="burger" name="name">
+  </div>
+  <button id="add">Add</button>
+</form> -->
