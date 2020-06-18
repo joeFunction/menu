@@ -72,7 +72,7 @@ $(document).ready(function() {
     var newPostCardHeading = $("<div>");
     newPostCardHeading.addClass("card-header");
     var deleteBtn = $("<button>");
-    deleteBtn.text("x");
+    deleteBtn.text("DELETE");
     deleteBtn.addClass("delete btn btn-danger");
     var editBtn = $("<button>");
     editBtn.text("EDIT");
@@ -83,10 +83,11 @@ $(document).ready(function() {
     newPostAuthor.text("Server: " + post.author.name);
     newPostAuthor.css({
       float: "right",
-      color: "blue",
+      color: "black",
       "margin-top":
       "-10px"
     });
+
     var newPostCardBody = $("<div>");
     newPostCardBody.addClass("card-body");
     var newPostBody = $("<p>");

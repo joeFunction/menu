@@ -40,8 +40,8 @@ $(document).ready(function() {
     newTr.append("<td>" + authorData.name + "</td>");
     newTr.append("<td></td>");
     newTr.append("<td><a href='/blog?author_id=" + authorData.id + "'>View Tables</a></td>");
-    newTr.append("<td><a href='/cms?author_id=" + authorData.id + "'>Create</a></td>");
-    newTr.append("<td><a style='cursor:pointer;color:red' class='delete-author'>Delete</a></td>");
+    newTr.append("<td><a href='/cms?author_id=" + authorData.id + "'>Create Table</a></td>");
+    newTr.append("<td><a style='cursor:pointer;color:red' class='delete-author'>Delete Employee</a></td>");
     return newTr;
   }
 
